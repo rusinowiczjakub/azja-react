@@ -1,0 +1,56 @@
+$global-link-color: #DA7D02;
+$navbar-nav-item-font-size: 20px;
+$navbar-nav-item-active-color: #4497f3;
+$navbar-nav-item-color: #bab8b8;
+$navbar-nav-item-text-transform: none;
+$navbar-nav-item-height: 57px;
+
+$global-font-family: 'Nunito';
+$base-body-font-family: 'Nunito';
+
+
+
+.uk-sign-in {
+  width: 151px;
+  height: 57px;
+  border: 3px solid #3984f3;
+  color: #3984f3 !important;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #3984f3;
+    color: white !important;
+  }
+}
+
+.uk-navbar-nav {
+  li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.uk-container {
+  max-width: 1600px;
+  height: 100%;
+}
+
+.uk-sign-up {
+  width: 202px;
+  height: 57px;
+  background-color: #3984f3;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.uk-container-header {
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  padding-top: 50px;
+}
+
+// 1. Your custom variables and variable overwrites.
+@import "style/partials/custom";
+
+// 2. Import default variables and available mixins.
+@import "~uikit/src/scss/variables-theme";
+@import "~uikit/src/scss/mixins-theme";
+
+// 4. Import UIkit.
+@import "~uikit/src/scss/uikit-theme";
+
+
