@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
   .header__text {
@@ -42,6 +42,8 @@ header {
   img.svg {
     position: absolute;
     right: 0;
-    top: 130px;
+    top: 120px;
+    width: 700px;
+    height: 700px;
   }
 }

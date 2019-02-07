@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import 'uikit/dist/js/uikit.min'
-import 'uikit/dist/js/uikit-icons.min'
-
 import * as serviceWorker from './serviceWorker';
+
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+UIkit.use(Icons);
+// The following line makes it finally work:
+window.UIkit = UIkit;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

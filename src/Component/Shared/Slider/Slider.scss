@@ -1,0 +1,28 @@
+.arrows-container, .slides-wrapper {
+  display: flex;
+}
+
+.arrows-container {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.arrow {
+  cursor: pointer;
+  color: rgba(102, 102, 102, .7);
+  font-weight: lighter;
+
+  &:hover {
+    color: rgba(102, 102, 102, 1);
+  }
+}
+
+.slide {
+  transition: transform ease-out 0.45s;
+  margin: 0 20px 0 20px;
+  min-width: 200px;
+}
+
+.slides-wrapper {
+  //min-width: 300px;
+}
