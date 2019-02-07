@@ -4,6 +4,9 @@ import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 import './Slider.scss';
 
+/**
+ * @TODO MAKE IT REUSABLE
+ */
 export default class Slider extends Component {
     constructor(props) {
         super(props);
