@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/azja-react/static/js/runtime~main.7d47756e.js"
   },
   {
-    "revision": "032ddb707c5127021b49",
-    "url": "/azja-react/static/js/main.032ddb70.chunk.js"
+    "revision": "6ad8a30e0f42ee1b4a45",
+    "url": "/azja-react/static/js/main.6ad8a30e.chunk.js"
   },
   {
     "revision": "fbfae6a6b31ade67e53d",
     "url": "/azja-react/static/js/1.fbfae6a6.chunk.js"
   },
   {
-    "revision": "032ddb707c5127021b49",
-    "url": "/azja-react/static/css/main.bd8355ea.chunk.css"
+    "revision": "6ad8a30e0f42ee1b4a45",
+    "url": "/azja-react/static/css/main.7c9d0e31.chunk.css"
   },
   {
-    "revision": "07dcba2ca4a5e5fd6c127899373ae06d",
+    "revision": "a4e72cf8a9b1f023270f38867c65d382",
     "url": "/azja-react/index.html"
   }
 ];
