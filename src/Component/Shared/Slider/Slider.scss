@@ -1,6 +1,13 @@
 .arrows-container, .slides-wrapper {
   display: flex;
 }
+.slides-wrapper {
+  //align-items: center;
+  overflow-y: visible !important;
+  position: relative;
+  //height: auto;
+
+}
 
 .arrows-container {
   margin-top: 40px;
@@ -20,9 +27,22 @@
 .slide {
   transition: transform ease-out 0.45s;
   margin: 0 20px 0 20px;
-  min-width: 200px;
+  min-width: 250px;
+  height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  //height: 400px;
 }
 
-.slides-wrapper {
+.slider {
+  position: relative;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: visible !important;
   //min-width: 300px;
 }
+
