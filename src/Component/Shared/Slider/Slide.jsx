@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Slide = ({image, index, activeIndex}) => {
+const Slide = (props) => {
     const activeStyle = {
         transform: 'translateY(-35px)'
     };
@@ -12,9 +12,9 @@ const Slide = ({image, index, activeIndex}) => {
 
     return (
         <div className="slide" style={
-            activeIndex === index ? activeStyle : nonActiveStyle
+            props.activeIndex === props.index ? activeStyle : nonActiveStyle
         }>
-            <img src={image} />
+            {props.children}
         </div>
     )
 };

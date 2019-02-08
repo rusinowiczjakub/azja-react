@@ -4,8 +4,21 @@
 
 section {
   overflow-y: visible;
+  overflow-x: hidden;
+  height: auto;
 
   div {
     overflow-y: visible;
+
+
+  }
+}
+
+.offer__text {
+
+  @media only screen and (min-width: 717px)
+    and (max-width: 960px)
+  {
+    padding: 100px;
   }
 }

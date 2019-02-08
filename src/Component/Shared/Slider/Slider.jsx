@@ -11,30 +11,27 @@ export default class Slider extends Component {
     constructor(props) {
         super(props);
 
-        const images = [
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-        ];
-
         this.state = {
-            images: images,
+            children: this.props.children
         }
     }
 
     componentDidMount () {
-        const index = Math.floor(this.state.images.length / 2);
+        let index = Math.floor(this.state.children.length / 2);
+        if (index % 2 === 0) {
+            index--;
+        }
         this.setState( {
             currentIndex: index,
-            translateValue: -(this.slideWidth()) * index
+            translateValue: -(this.slideWidth() + 40) * index
         });
     }
 
     prevSlide = () => {
         if(this.state.currentIndex === 0) {
             return this.setState({
-                currentIndex: this.state.images.length - 1,
-                translateValue: -(this.slideWidth() * (this.state.images.length - 1))
+                currentIndex: this.state.children.length - 1,
+                translateValue: -(this.slideWidth() * (this.state.children.length - 1))
             })
         }
 
@@ -45,7 +42,7 @@ export default class Slider extends Component {
     };
 
     nextSlide = () => {
-        if(this.state.currentIndex === this.state.images.length - 1) {
+        if(this.state.currentIndex === this.state.children.length - 1) {
             return this.setState({
                 currentIndex: 0,
                 translateValue: 0
@@ -54,7 +51,7 @@ export default class Slider extends Component {
 
         this.setState(prevState => ({
             currentIndex: prevState.currentIndex + 1,
-            translateValue: prevState.translateValue + -(this.slideWidth())
+            translateValue: prevState.translateValue + -(this.slideWidth() + 40)
         }));
     };
 
@@ -72,8 +69,10 @@ export default class Slider extends Component {
                      }}
                 >
                     {
-                        this.state.images.map((image, i) => (
-                            <Slide key={i} index={i} activeIndex={this.state.currentIndex} image={image} />
+                        this.state.children.map((child, i) => (
+                            <Slide key={i} index={i} activeIndex={this.state.currentIndex}>
+                                {child}
+                            </Slide>
                         ))
                     }
                 </div>

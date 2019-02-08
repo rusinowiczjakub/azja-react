@@ -1,17 +1,24 @@
 .arrows-container, .slides-wrapper {
   display: flex;
 }
+
 .slides-wrapper {
   //align-items: center;
   overflow-y: visible !important;
   position: relative;
-  //height: auto;
+  //height: 500px;
 
 }
 
 .arrows-container {
   margin-top: 40px;
-  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 699px) {
+    margin-left: 60px;
+    justify-content: left;
+  }
 }
 
 .arrow {
@@ -35,14 +42,11 @@
     height: 100%;
     object-fit: cover;
   }
-  //height: 400px;
 }
 
 .slider {
   position: relative;
-  height: auto;
+  padding: 100px 100px 0 100px;
   overflow-x: hidden;
-  overflow-y: visible !important;
-  //min-width: 300px;
 }
 
